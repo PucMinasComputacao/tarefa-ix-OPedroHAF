@@ -4,9 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <h1>Mini Ecommerce</h1>
+    <input type="text" id="search">
+    <select name="category" id="category">
+
+    </select>
+    <button id="btnRender">Renderizar</button>
+    <button id="btnCreate" onclick="on()">Criar card</button>
+    <button id="btnFilter">Filtrar</button>
+    <div id="product-list">
+        
+    </div>
+    <div id="product-details">
+        
+    </div>
+    <div id="overlay">
+        <div id="modal">
+            <form id="modal-form">
+                <div>
+                    <label for="nome" class="block-display">Nome do produto</label>
+                    <input type="text" id="nome" name="nome"  class="block-display">
+                </div>
+                <div>
+                    <label for="preco" class="block-display">Preço</label>
+                    <input type="number" name="preco" id="preco" class="block-display">
+                </div>
+                <div>
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria" name="categoria">
+                        <option value="brinquedos">Brinquedos</option>
+                        <option value="celulares">Celulares</option>
+                        <option value="notebooks">Notebooks</option>
+                        <option value="acessorios">Acessórios</option>
+                        <option value="games">Games</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="produto-img-form" class="block-display">Selecione uma imagem para o produto: </label>
+                    <input type="file" accept="image/*" id="produto-img-form" name="imagem">
+                </div>
+                <div>
+                    <textarea id="descricao" name="descricao" ></textarea>
+                </div>
+                <div>
+                    <p>Está em estoque?</p>
+                    Sim<input type="radio" name="emEstoque" value="true">
+                    Não<input type="radio" name="emEstoque" value="false">
+                </div>
+                <button type="submit" class="btn">Criar</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
