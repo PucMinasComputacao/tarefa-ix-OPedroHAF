@@ -105,6 +105,10 @@ formModal.addEventListener("submit", function(e){
 const renderBtn = document.getElementById("btnRender")
 renderBtn.addEventListener("click", () => {
     renderProducts(data)
+    const cards = document.querySelectorAll("[data-id]")
+    cards.forEach(card => {
+    console.log(card)
+})
 })
 
 const filterBtn = document.getElementById("btnFilter")
@@ -126,6 +130,7 @@ function renderProducts(produtos){
     for(i = 0; i < produtos.products.length; i++){
         productList.appendChild(createProductCard(produtos.products[i]))
     }
+    
 }
 function renderCategories(){
     const categorias = document.getElementById("category")
@@ -186,6 +191,7 @@ function filterProducts(){
 }
 function createProductCard(product){
     const productElement = document.createElement("article")
+    productElement.dataset.id = product.id
     const productDivImage = document.createElement("div")
     const productImage = document.createElement("img")
     const productDivBtn = document.createElement("div")
