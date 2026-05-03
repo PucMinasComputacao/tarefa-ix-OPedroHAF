@@ -12,3 +12,10 @@ A atividade foi pensada para ser concluída em até 1h no laboratório, usando V
 - Nome: Pedro Henrique Alves Ferreira
 - Matricula: 913940
 
+## Produtos Renderizados
+![Produtos](./public/prints/print1.png)
+## Detalhes
+![Detalhes](./public/prints/print2.png)
+## Listagem
+![Listagem](./public/prints/print3.png)
+
